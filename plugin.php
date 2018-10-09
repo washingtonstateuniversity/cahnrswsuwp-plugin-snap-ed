@@ -1,12 +1,12 @@
 <?php
 /*
-Plugin Name: WSUWP Plugin Skeleton
+Plugin Name: CAHNRSWSUWP SNAP-ED
 Version: 0.0.1
-Description: A skeleton project to use when starting a new WSU WordPress plugin. Replace this description.
-Author: washingtonstateuniversity, [Other Plugin Authors]
+Description: Plugin for SNAP-ED custom features.
+Author: washingtonstateuniversity, Danial Bleile
 Author URI: https://web.wsu.edu/
 Plugin URI: https://github.com/washingtonstateuniversity/wsuwp-plugin-skeleton
-Text Domain: wsuwp-plugin-skeleton
+Text Domain: cahnrswsuwp-plugin-snap-ed
 */
 
 // If this file is called directly, abort.
