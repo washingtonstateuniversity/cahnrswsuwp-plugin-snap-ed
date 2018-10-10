@@ -18,8 +18,6 @@ class CAHNRSWSUWP_Plugin_SNAP_ED {
 
 		include_once __DIR__ . '/modules/people/people.php';
 
-		include_once dirname( dirname( __FILE__ ) ) . '/csv/csv.php';
-
 	} // End setup_plugin
 
 
