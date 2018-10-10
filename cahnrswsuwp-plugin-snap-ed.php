@@ -16,7 +16,7 @@ class CAHNRSWSUWP_Plugin_SNAP_ED {
 
 	private function setup_plugin() {
 
-		include_once __DIR__ . '/people.php';
+		include_once __DIR__ . '/modules/people/people.php';
 
 		include_once dirname( dirname( __FILE__ ) ) . '/csv/csv.php';
 
@@ -32,7 +32,7 @@ class CAHNRSWSUWP_Plugin_SNAP_ED {
 
 	public function add_public_scripts() {
 
-		wp_enqueue_style( 'snap-ed', plugin_dir_url( dirname( __FILE__ ) ) . '/style.css', array(), '0.0.2' );
+		wp_enqueue_style( 'snap-ed', plugin_dir_url( __FILE__ ) . '/style.css', array(), '0.0.2' );
 
 	} // End add_public_scripts
  

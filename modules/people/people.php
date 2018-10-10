@@ -128,13 +128,11 @@ class People {
 
 		usort( $items, array( $this, 'sort_items' ) );
 
-		$display_path = dirname( dirname( __FILE__ ) ) . '/displays/people/';
-
 		ob_start();
 
 		echo '<div class="profile-contact-table">';
 
-		include $display_path . 'contact-table-row-header.php';
+		include __DIR__ . '/displays/contact-table-row-header.php';
 
 		foreach( $items as $item ) {
 
@@ -145,7 +143,7 @@ class People {
 			$phone           = ( ! empty( $item['phone'] ) ) ? $item['phone'] : '';
 			$email           = ( ! empty( $item['email'] ) ) ? $item['email'] : '';
 
-			include $display_path . 'contact-table-row.php';		
+			include __DIR__ . '/displays/contact-table-row.php';		
 
 		} // End foreach
 
