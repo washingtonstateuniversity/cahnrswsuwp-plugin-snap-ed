@@ -20,5 +20,5 @@ if ( version_compare( PHP_VERSION, '5.3', '<' ) ) {
 	"echo '<div class=\"error\"><p>" . __( 'WSUWP Plugin Skeleton requires PHP 5.3 to function properly. Please upgrade PHP or deactivate the plugin.', 'wsuwp-plugin-skeleton' ) . "</p></div>';" ) );
 	return;
 } else {
-	include_once __DIR__ . '/includes/wsuwp-plugin-skeleton.php';
+	include_once __DIR__ . '/includes/cahnrswsuwp-plugin-snap-ed.php';
 }
