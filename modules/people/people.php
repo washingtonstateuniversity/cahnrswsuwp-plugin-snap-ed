@@ -126,7 +126,11 @@ class People {
 
 	private function get_contact_table_display( $items, $settings ) {
 
-		usort( $items, array( $this, 'sort_items' ) );
+		if ( empty( $settings['order_by'] ) || 'date' === $settings['order_by'] ) {
+
+			usort( $items, array( $this, 'sort_items' ) );
+
+		} // End if
 
 		ob_start();
 
@@ -134,7 +138,7 @@ class People {
 
 		include __DIR__ . '/displays/contact-table-row-header.php';
 
-		foreach( $items as $item ) {
+		foreach ( $items as $item ) {
 
 			$region          = ( ! empty( $item['regions'] ) ) ? $item['regions'] : '';
 			$affiliation     = ( ! empty( $item['affiliations'] ) ) ? $item['affiliations'] : '';
