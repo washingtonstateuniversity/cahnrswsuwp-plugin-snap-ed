@@ -11,6 +11,8 @@ class CAHNRSWSUWP_Plugin_SNAP_ED {
 
 		$this->add_actions();
 
+		$this->add_filters();
+
 	} // End __construct
 
 
