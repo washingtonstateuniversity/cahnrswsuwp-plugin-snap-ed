@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: CAHNRSWSUWP SNAP-ED
-Version: 0.0.1
+Version: 0.0.2
 Description: Plugin for SNAP-ED custom features.
 Author: washingtonstateuniversity, Danial Bleile
 Author URI: https://web.wsu.edu/

@@ -28,6 +28,22 @@ class CAHNRSWSUWP_Plugin_SNAP_ED {
 	}
 
 
+	private function add_filters() {
+
+		add_filter( 'spine_get_title', array( $this, 'filter_title' ), 10, 4 );
+
+	}
+
+
+	public function filter_title( $title, $site_part, $global_part, $view_title ) {
+
+		$title = $view_title . $site_part;
+
+		return $title;
+
+	} // End filter_title
+
+
 	public function add_public_scripts() {
 
 		wp_enqueue_style( 'snap-ed', plugin_dir_url( __FILE__ ) . '/style.css', array(), '0.0.2' );
