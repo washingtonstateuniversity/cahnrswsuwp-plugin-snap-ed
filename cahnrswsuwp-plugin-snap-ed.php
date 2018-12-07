@@ -20,6 +20,8 @@ class CAHNRSWSUWP_Plugin_SNAP_ED {
 
 		include_once __DIR__ . '/modules/people/people.php';
 
+		add_shortcode( 'region_map', array( $this, 'display_region_map' ) );
+
 	} // End setup_plugin
 
 
@@ -51,6 +53,13 @@ class CAHNRSWSUWP_Plugin_SNAP_ED {
 		wp_enqueue_style( 'snap-ed', plugin_dir_url( __FILE__ ) . '/style.css', array(), '0.0.2' );
 
 	} // End add_public_scripts
+
+
+	public function display_region_map( $atts ) {
+
+		include __DIR__ . '/map.html';
+
+	} // End display_region_map
  
 } // End CAHNRSWSUWP_Plugin_SNAP_ED
 
