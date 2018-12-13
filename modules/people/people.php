@@ -111,10 +111,10 @@ class People {
 
 			switch( $settings['display'] ) {
 
+				case 'team-table':
 				case 'contact-table':
 					$html .= $this->get_contact_table_display( $items, $settings );
 					break;
-
 			}
 
 		} // End if
@@ -134,9 +134,11 @@ class People {
 
 		ob_start();
 
-		echo '<div class="profile-contact-table">';
+		echo '<div class="profile-contact-table" role="grid">';
 
 		include __DIR__ . '/displays/contact-table-row-header.php';
+
+		echo '<div class="profile-contact-table-rowgroup" role="rowgroup">';
 
 		foreach ( $items as $item ) {
 
@@ -151,7 +153,7 @@ class People {
 
 		} // End foreach
 
-		echo '</div>';
+		echo '</div></div>';
 
 		$html = ob_get_clean();
 
